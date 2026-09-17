@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Builders &amp; Solution Inc. — Residential &amp; Commercial Construction</title>
+<meta name="description" content="Muhammad Builders & Solution Inc. delivers residential and commercial construction, architectural design, grey structure and turnkey projects — 15+ years of experience and 150+ units built and sold.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,300..900&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: dark;
+  --ink:#0d0c0a;
+  --ink-2:#17150f;
+  --ink-3:#221e15;
+  --gold:#f0a81c;
+  --gold-deep:#a9620c;
+  --bone:#f6f2e8;
+  --muted:#a8a193;
+  --line:rgba(240,168,28,.20);
+  --maxw:1180px;
+  --pad:clamp(20px,5vw,64px);
+  --sans:'Archivo','Helvetica Neue',Arial,sans-serif;
+}
+:root:not([data-theme="light"]){color-scheme:dark;}
+:root[data-theme="dark"]{color-scheme:dark;}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--ink);
+  color:var(--bone);
+  font-family:var(--sans);
+  font-variation-settings:'wdth' 100,'wght' 400;
+  font-size:17px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{animation-duration:.001ms!important;transition-duration:.001ms!important;}
+}
+img{max-width:100%;display:block;}
+a{color:inherit;}
+::selection{background:var(--gold);color:#120e05;}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad);}
+
+h1,h2,h3{margin:0;font-family:'Fraunces',Georgia,serif;font-optical-sizing:auto;font-weight:600;line-height:1.04;letter-spacing:-.015em;}
+h1{font-size:clamp(2.7rem,7.4vw,5.6rem);font-weight:560;}
+h2{font-size:clamp(2rem,4.4vw,3.25rem);letter-spacing:-.018em;}
+h3{font-size:1.2rem;font-weight:600;line-height:1.28;letter-spacing:-.005em;font-family:'Fraunces',Georgia,serif;}
+.eyebrow{
+  display:flex;align-items:center;gap:10px;margin-bottom:14px;
+  font-family:var(--sans);font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--gold);font-variation-settings:'wght' 700;
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--gold);}
+
+/* ---------- scroll reveal ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.3,1),transform .8s cubic-bezier(.2,.7,.3,1);}
+.reveal.is-visible{opacity:1;transform:none;}
+p{margin:0 0 1.05em;max-width:66ch;}
+.lede{font-size:clamp(1.02rem,1.7vw,1.22rem);color:#d9d3c5;line-height:1.6;}
+.muted{color:var(--muted);}
+
+/* ---------- chevron marker (the brand's signature device) ---------- */
+.chev{flex:none;width:15px;height:20px;margin-top:.22em;}
+.chev path{fill:var(--gold);}
+
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:60;
+  background:rgba(13,12,10,.82);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(255,255,255,.07);
+  transition:box-shadow .3s ease;
+}
+header.is-scrolled{box-shadow:0 12px 30px -18px rgba(0,0,0,.7);}
+.bar{display:flex;align-items:center;gap:20px;height:70px;}
+.lock{display:flex;align-items:center;gap:11px;text-decoration:none;margin-right:auto;}
+.lock img{width:34px;height:34px;object-fit:contain;}
+.lock .name{display:block;}
+.lock .name b{display:block;font-size:.83rem;font-variation-settings:'wdth' 100,'wght' 800;
+  letter-spacing:.11em;line-height:1.1;color:var(--bone);}
+.lock .sub{display:block;font-size:.56rem;letter-spacing:.17em;color:var(--gold);line-height:1.5;}
+nav{display:flex;gap:26px;}
+nav a{
+  text-decoration:none;font-size:.9rem;color:#cfc9bb;
+  padding:4px 0;border-bottom:1px solid transparent;transition:color .18s,border-color .18s;
+}
+nav a:hover,nav a:focus-visible{color:var(--gold);border-bottom-color:var(--gold);}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--bone);
+  border-radius:3px;padding:8px 13px;font:inherit;font-size:.85rem;cursor:pointer;}
+@media(max-width:860px){
+  nav{position:fixed;inset:70px 0 auto 0;background:var(--ink-2);flex-direction:column;gap:0;
+    padding:6px var(--pad) 22px;border-bottom:1px solid var(--line);
+    transform:translateY(-140%);transition:transform .3s ease;}
+  nav.open{transform:none;}
+  nav a{padding:13px 0;border-bottom:1px solid rgba(255,255,255,.07);font-size:1rem;}
+  .menu-btn{display:block;}
+}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:min(92vh,820px);display:flex;align-items:flex-end;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;}
+.hero-bg video,.hero-bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(.55) contrast(1.08) brightness(.6);}
+.hero-bg::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(95deg,rgba(13,12,10,.96) 0%,rgba(13,12,10,.78) 40%,rgba(13,12,10,.35) 78%,rgba(13,12,10,.6) 100%);
+}
+/* layered gold chevrons echoing the brand cover */
+.hero-chev{position:absolute;inset:0;overflow:hidden;pointer-events:none;}
+.hero-chev svg{position:absolute;left:-6%;top:50%;transform:translateY(-50%);height:150%;opacity:.5;}
+.hero-inner{position:relative;width:100%;padding-top:120px;padding-bottom:56px;}
+.hero h1{max-width:13ch;text-shadow:0 2px 40px rgba(0,0,0,.5);}
+.hero .lede{margin-top:22px;max-width:52ch;}
+.hero-cta{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px;}
+
+.scroll-cue{
+  position:absolute;left:50%;bottom:28px;transform:translateX(-50%);
+  width:26px;height:42px;border:1.5px solid rgba(246,242,232,.4);border-radius:20px;
+  display:flex;justify-content:center;padding-top:8px;z-index:2;
+}
+.scroll-cue span{width:4px;height:8px;border-radius:2px;background:var(--gold);animation:cue 1.8s ease-in-out infinite;}
+@keyframes cue{0%{opacity:1;transform:translateY(0);}70%{opacity:0;transform:translateY(12px);}100%{opacity:0;}}
+@media (prefers-reduced-motion:reduce){.scroll-cue span{animation:none;}}
+@media(max-width:700px){.scroll-cue{display:none;}}
+
+.btn{
+  display:inline-block;text-decoration:none;font:inherit;font-size:.93rem;
+  font-variation-settings:'wdth' 100,'wght' 700;
+  padding:14px 26px;border-radius:2px;cursor:pointer;border:1px solid transparent;
+  transition:background .18s,color .18s,border-color .18s,transform .18s,box-shadow .18s;
+}
+.btn-gold{background:linear-gradient(115deg,var(--gold),var(--gold-deep));color:#120e05;}
+.btn-gold:hover{background:var(--gold);transform:translateY(-2px);box-shadow:0 14px 30px -14px rgba(240,168,28,.55);}
+.btn-ghost{border-color:rgba(246,242,232,.3);color:var(--bone);background:transparent;}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px);}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+
+/* one orchestrated entrance */
+.rise{opacity:0;transform:translateY(16px);animation:rise .85s cubic-bezier(.2,.7,.3,1) forwards;}
+.rise:nth-child(1){animation-delay:.1s}
+.rise:nth-child(2){animation-delay:.24s}
+.rise:nth-child(3){animation-delay:.36s}
+@keyframes rise{to{opacity:1;transform:none;}}
+@media (prefers-reduced-motion:reduce){.rise{opacity:1;transform:none;}}
+
+/* ---------- stats ---------- */
+.stats{background:var(--ink-2);border-top:1px solid var(--line);border-bottom:1px solid rgba(255,255,255,.06);}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);}
+.stat{padding:30px 0 32px;border-left:1px solid rgba(255,255,255,.07);padding-left:26px;}
+.stat:first-child{border-left:0;padding-left:0;}
+.stat b{display:block;font-size:clamp(1.9rem,3.6vw,2.7rem);font-variation-settings:'wdth' 115,'wght' 800;
+  color:var(--gold);line-height:1;letter-spacing:-.03em;}
+.stat span{display:block;margin-top:9px;font-size:.87rem;color:var(--muted);max-width:19ch;line-height:1.4;}
+@media(max-width:760px){
+  .stats-grid{grid-template-columns:1fr 1fr;}
+  .stat{padding-left:22px;}
+  .stat:nth-child(odd){border-left:0;padding-left:0;}
+  .stat:nth-child(n+3){border-top:1px solid rgba(255,255,255,.07);padding-top:26px;}
+}
+
+/* ---------- sections ---------- */
+section{padding:clamp(66px,9vw,118px) 0;}
+.sec-head{max-width:62ch;margin-bottom:clamp(34px,4.5vw,54px);}
+.sec-head h2 + p{margin-top:18px;}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,70px);align-items:center;}
+@media(max-width:880px){.split{grid-template-columns:1fr;}}
+
+.framed{position:relative;}
+.framed img{border-radius:3px;box-shadow:0 24px 60px -20px rgba(0,0,0,.55);}
+.framed::before{
+  content:"";position:absolute;left:-16px;top:-16px;width:110px;height:110px;
+  border-left:2px solid var(--gold);border-top:2px solid var(--gold);border-radius:3px 0 0 0;
+}
+
+/* ---------- services ---------- */
+#services{position:relative;background:var(--ink-2);}
+.tex{position:absolute;inset:0;overflow:hidden;pointer-events:none;}
+.tex img{width:100%;height:100%;object-fit:cover;opacity:.07;filter:contrast(1.3);}
+.tex::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,var(--ink-2),rgba(23,21,15,.55) 45%,var(--ink-2));}
+#services .wrap{position:relative;}
+.svc-list{display:grid;gap:0;}
+.svc{
+  display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:baseline;
+  padding:26px 0;border-top:1px solid rgba(255,255,255,.09);
+}
+.svc:last-child{border-bottom:1px solid rgba(255,255,255,.09);}
+.svc h3{font-size:clamp(1.3rem,2.6vw,1.9rem);font-weight:600;}
+.svc p{margin:9px 0 0;font-size:.97rem;color:var(--muted);max-width:60ch;}
+.svc .tag{font-size:.78rem;color:var(--gold);white-space:nowrap;align-self:center;}
+@media(max-width:700px){
+  .svc{grid-template-columns:auto 1fr;}
+  .svc .tag{grid-column:2;margin-top:10px;}
+}
+
+/* ---------- projects ---------- */
+.proj{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;}
+.proj figure{margin:0;position:relative;overflow:hidden;border-radius:3px;background:var(--ink-3);}
+.proj img{width:100%;height:100%;object-fit:cover;}
+.p-a{grid-column:span 7;aspect-ratio:16/10;}
+.p-b{grid-column:span 5;aspect-ratio:4/5;}
+.p-c{grid-column:span 6;aspect-ratio:3/2;}
+.p-d{grid-column:span 6;aspect-ratio:3/2;}
+.proj figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:34px 16px 13px;
+  font-size:.82rem;color:#efe9da;
+  background:linear-gradient(transparent,rgba(9,8,6,.88));
+}
+@media(max-width:820px){
+  .p-a,.p-b{grid-column:span 12;}
+  .p-c,.p-d{grid-column:span 6;}
+}
+@media(max-width:560px){.p-c,.p-d{grid-column:span 12;aspect-ratio:16/10;}}
+
+.pcards{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,3.5vw,44px);margin-top:44px;}
+.pcard{border-top:2px solid var(--gold);padding-top:20px;}
+.pcard p{font-size:.97rem;color:var(--muted);margin-top:10px;}
+@media(max-width:760px){.pcards{grid-template-columns:1fr;}}
+
+/* ---------- walkthrough video ---------- */
+#walkthrough{background:var(--ink-2);border-top:1px solid var(--line);border-bottom:1px solid rgba(255,255,255,.06);}
+.vwrap{
+  position:relative;max-width:760px;margin:0 auto;border-radius:4px;overflow:hidden;
+  box-shadow:0 30px 70px -24px rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.08);
+  background:#000;
+}
+.vwrap video{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;background:#000;}
+.vcontrols{position:absolute;left:16px;bottom:16px;display:flex;gap:10px;}
+.vbtn{
+  width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:rgba(10,9,7,.55);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.28);
+  color:#f6f2e8;cursor:pointer;transition:background .18s,border-color .18s,color .18s;
+}
+.vbtn:hover{border-color:var(--gold);color:var(--gold);}
+
+/* ---------- gallery ---------- */
+#gallery{position:relative;background:var(--ink-2);}
+#gallery .sec-head{position:relative;}
+.gfilter{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:30px;position:relative;}
+.gchip{
+  font:inherit;font-size:.83rem;color:#d9d3c5;background:transparent;
+  border:1px solid rgba(255,255,255,.16);border-radius:20px;padding:8px 16px;cursor:pointer;
+  transition:border-color .18s,color .18s,background .18s;
+}
+.gchip:hover{border-color:var(--gold);color:var(--gold);}
+.gchip.is-active{background:var(--gold);border-color:var(--gold);color:#150f04;font-variation-settings:'wght' 700;}
+.ggrid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:12px;position:relative;
+}
+.gitem{
+  all:unset;box-sizing:border-box;position:relative;display:block;aspect-ratio:4/3;
+  border-radius:3px;overflow:hidden;cursor:pointer;background:var(--ink-3);
+}
+.gitem img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;}
+.gitem:hover img,.gitem:focus-visible img{transform:scale(1.06);}
+.gitem .gcap{
+  position:absolute;left:0;right:0;bottom:0;padding:22px 12px 10px;font-size:.76rem;color:#f3efe4;
+  background:linear-gradient(transparent,rgba(8,7,5,.9));opacity:0;transform:translateY(6px);
+  transition:opacity .2s,transform .2s;
+}
+.gitem:hover .gcap,.gitem:focus-visible .gcap{opacity:1;transform:none;}
+.gitem[hidden]{display:none;}
+@media(max-width:900px){.ggrid{grid-template-columns:repeat(3,1fr);}}
+@media(max-width:620px){.ggrid{grid-template-columns:repeat(2,1fr);}.gitem .gcap{opacity:1;transform:none;background:linear-gradient(transparent,rgba(8,7,5,.82));}}
+
+/* ---------- DHA project cover ---------- */
+.dcover{position:relative;height:clamp(320px,52vw,520px);overflow:hidden;margin-top:clamp(48px,7vw,80px);}
+.dcover img{width:100%;height:100%;object-fit:cover;}
+.dcover::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(0deg,rgba(13,12,10,.96) 0%,rgba(13,12,10,.55) 46%,rgba(13,12,10,.15) 100%);
+}
+.dcover-inner{position:absolute;left:0;right:0;bottom:0;padding-bottom:clamp(28px,4vw,46px);}
+.dcover-eyebrow{display:inline-block;font-size:.78rem;color:var(--gold);margin-bottom:10px;}
+.dcover-inner h2{color:var(--bone);text-shadow:0 2px 30px rgba(0,0,0,.5);}
+.dcover-inner .lede{margin-top:14px;max-width:52ch;}
+
+/* ---------- lightbox ---------- */
+.lightbox{
+  position:fixed;inset:0;z-index:200;background:rgba(6,5,4,.94);
+  display:flex;align-items:center;justify-content:center;flex-direction:column;padding:5vh 5vw;
+}
+.lightbox[hidden]{display:none;}
+.lb-img{max-width:min(88vw,1100px);max-height:76vh;object-fit:contain;border-radius:2px;box-shadow:0 30px 80px rgba(0,0,0,.6);}
+.lb-cap{margin:16px 0 0;color:#e9e3d5;font-size:.9rem;}
+.lb-close{
+  position:absolute;top:18px;right:22px;background:none;border:0;color:#f3efe4;font-size:2.2rem;
+  line-height:1;cursor:pointer;padding:6px 10px;
+}
+.lb-close:hover{color:var(--gold);}
+.lb-nav{
+  position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);
+  color:#f3efe4;font-size:2rem;line-height:1;width:48px;height:48px;border-radius:50%;cursor:pointer;
+}
+.lb-nav:hover{border-color:var(--gold);color:var(--gold);}
+.lb-prev{left:2vw;}
+.lb-next{right:2vw;}
+@media(max-width:620px){.lb-nav{width:40px;height:40px;font-size:1.5rem;}.lb-prev{left:6px;}.lb-next{right:6px;}}
+
+/* ---------- why us ---------- */
+#why{background:var(--ink-2);}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(26px,3.6vw,48px);}
+.col{display:flex;flex-direction:column;gap:14px;}
+.col p{font-size:.96rem;color:var(--muted);margin:0;}
+.rule{height:2px;width:46px;background:var(--gold);}
+@media(max-width:820px){.cols{grid-template-columns:1fr;}}
+
+/* ---------- process (a real sequence — numbering earns its place) ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:14px;}
+.step{padding:24px 22px 28px 0;border-top:2px solid rgba(255,255,255,.13);position:relative;}
+.step:not(:last-child){padding-right:30px;}
+.step::before{
+  content:"";position:absolute;top:-2px;left:0;height:2px;width:34px;background:var(--gold);
+}
+.step .n{display:block;font-size:.8rem;color:var(--gold);font-variation-settings:'wght' 700;margin-bottom:9px;}
+.step p{font-size:.94rem;color:var(--muted);margin:9px 0 0;}
+@media(max-width:860px){.steps{grid-template-columns:1fr 1fr;}}
+@media(max-width:520px){.steps{grid-template-columns:1fr;}}
+
+/* ---------- values / mission list ---------- */
+.vals{display:grid;grid-template-columns:1fr 1fr;gap:clamp(22px,3vw,40px) clamp(26px,4vw,56px);}
+.val{display:flex;gap:14px;}
+.val p{margin:7px 0 0;font-size:.95rem;color:var(--muted);}
+@media(max-width:760px){.vals{grid-template-columns:1fr;}}
+
+/* ---------- contact ---------- */
+#contact{background:var(--ink-2);border-top:1px solid var(--line);}
+.contact-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(34px,5vw,64px);}
+@media(max-width:880px){.contact-grid{grid-template-columns:1fr;}}
+.detail{padding:16px 0;border-top:1px solid rgba(255,255,255,.09);}
+.detail:last-of-type{border-bottom:1px solid rgba(255,255,255,.09);}
+.detail dt{font-size:.78rem;color:var(--gold);margin-bottom:5px;}
+.detail dd{margin:0;font-size:1.02rem;overflow-wrap:anywhere;}
+.detail dd a{text-decoration:none;border-bottom:1px solid var(--line);}
+.detail dd a:hover{border-bottom-color:var(--gold);color:var(--gold);}
+
+form{display:grid;gap:15px;}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:15px;}
+@media(max-width:560px){.row{grid-template-columns:1fr;}}
+label{display:block;font-size:.82rem;color:var(--muted);margin-bottom:6px;}
+input,select,textarea{
+  width:100%;background:var(--ink);border:1px solid rgba(255,255,255,.15);color:var(--bone);
+  border-radius:2px;padding:12px 13px;font:inherit;font-size:.96rem;
+}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);outline:none;}
+textarea{min-height:118px;resize:vertical;}
+.note{font-size:.84rem;color:var(--muted);margin:0;}
+
+/* ---------- closing + footer ---------- */
+.closing{text-align:center;padding:clamp(70px,9vw,120px) 0;position:relative;}
+.closing::before{content:"\201C";position:absolute;left:50%;top:6px;transform:translateX(-50%);
+  font-family:'Fraunces',Georgia,serif;font-size:6rem;color:var(--gold);opacity:.22;line-height:1;}
+.closing blockquote{
+  margin:0 auto;max-width:24ch;font-family:'Fraunces',Georgia,serif;font-style:italic;
+  font-size:clamp(1.6rem,4.4vw,3rem);font-weight:500;line-height:1.2;letter-spacing:-.01em;position:relative;
+}
+.closing .by{margin-top:22px;font-size:.88rem;color:var(--gold);letter-spacing:.04em;}
+
+footer{border-top:1px solid rgba(255,255,255,.09);background:var(--ink-2);padding:clamp(48px,6vw,64px) 0 0;}
+.fgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.1fr;gap:clamp(28px,4vw,50px);padding-bottom:clamp(36px,5vw,52px);}
+.fcol h4{margin:0 0 16px;font-family:var(--sans);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-variation-settings:'wght' 700;}
+.fcol p{font-size:.9rem;color:var(--muted);max-width:36ch;}
+.fcol ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;}
+.fcol a{font-size:.9rem;color:#d9d3c5;text-decoration:none;transition:color .18s;}
+.fcol a:hover{color:var(--gold);}
+.fsocial{display:flex;gap:10px;margin-top:16px;}
+.fsocial a{
+  width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.18);
+  display:flex;align-items:center;justify-content:center;color:#d9d3c5;transition:border-color .18s,color .18s;
+}
+.fsocial a:hover{border-color:var(--gold);color:var(--gold);}
+.fbar{border-top:1px solid rgba(255,255,255,.08);padding:20px 0;display:flex;flex-wrap:wrap;gap:12px 24px;
+  align-items:center;justify-content:space-between;font-size:.82rem;color:var(--muted);}
+@media(max-width:900px){.fgrid{grid-template-columns:1fr 1fr;}}
+@media(max-width:560px){.fgrid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="lock" href="#top">
+      <img src="assets/logo.webp" alt="">
+      <span class="name"><b>MUHAMMAD</b><span class="sub">BUILDERS &amp; SOLUTION INC.</span></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#walkthrough">Video</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#why">Why us</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-bg">
+  <video autoplay muted loop playsinline preload="auto" poster="assets/hero.webp">
+    <source src="assets/video/hero-loop.mp4" type="video/mp4">
+  </video>
+</div>
+  <div class="hero-chev" aria-hidden="true">
+    <svg viewBox="0 0 520 700" preserveAspectRatio="xMinYMid meet">
+      <defs>
+        <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#f0a81c" stop-opacity=".85"/>
+          <stop offset="1" stop-color="#a9620c" stop-opacity=".35"/>
+        </linearGradient>
+      </defs>
+      <path d="M0 40 L210 350 L0 660 Z" fill="url(#g1)" opacity=".55"/>
+      <path d="M130 40 L340 350 L130 660 Z" fill="url(#g1)" opacity=".4"/>
+      <path d="M260 40 L470 350 L260 660 Z" fill="url(#g1)" opacity=".22"/>
+    </svg>
+  </div>
+  <div class="wrap hero-inner">
+    <h1 class="rise">We build with excellence.</h1>
+    <p class="lede rise">Muhammad Builders &amp; Solution Inc. delivers residential and commercial
+      construction from our base in Multan — from architectural planning and grey structure through to
+      complete turnkey handover.</p>
+    <div class="hero-cta rise">
+      <a class="btn btn-gold" href="#projects">See our projects</a>
+      <a class="btn btn-ghost" href="#contact">Start a project</a>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll to learn more">
+    <span></span>
+  </a>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat"><b>15+</b><span>Years building residential and commercial projects</span></div>
+    <div class="stat"><b>150+</b><span>Units constructed and sold to date</span></div>
+    <div class="stat"><b>1 yr</b><span>Early handover on a two-year flats project</span></div>
+    <div class="stat"><b>4</b><span>Service lines, from design to turnkey delivery</span></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">About us</span>
+      <h2>A construction partner you can hold to a date.</h2>
+      <p class="lede" style="margin-top:20px">We are a construction company specialising in residential
+        and commercial projects, committed to high-quality work, modern design and strong structural
+        standards.</p>
+      <p class="muted">Every project is handled with professionalism, attention to detail and timely
+        execution. Our focus is on reliable, cost-effective solutions that fit what a client actually
+        needs — not what is easiest to build.</p>
+      <p class="muted">Customer satisfaction sits at the centre of how we work. We build long-term
+        relationships through trust, transparency and consistent performance, and we keep
+        communication clear at every stage so there are no surprises at handover.</p>
+    </div>
+    <div class="framed">
+      <img src="assets/gallery/g01.webp" alt="Muhammad Builders &amp; Solution Inc. head office facade">
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="tex" aria-hidden="true"><img src="assets/texture.webp" alt=""></div>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Services</span>
+      <h2>What we build</h2>
+      <p class="lede">Four service lines that cover a project end to end — you can bring us in at any
+        stage, or hand over the whole thing.</p>
+    </div>
+    <div class="svc-list">
+      <article class="svc">
+        <svg class="chev" viewBox="0 0 15 20" aria-hidden="true"><path d="M0 0 L15 10 L0 20 Z"/></svg>
+        <div>
+          <h3>Residential construction</h3>
+          <p>Houses and housing estates built to modern designs and strong structural standards, planned
+            around how people will actually live in them.</p>
+        </div>
+        <span class="tag">Houses &amp; estates</span>
+      </article>
+      <article class="svc">
+        <svg class="chev" viewBox="0 0 15 20" aria-hidden="true"><path d="M0 0 L15 10 L0 20 Z"/></svg>
+        <div>
+          <h3>Commercial buildings</h3>
+          <p>Offices, flats and mixed-use developments designed for efficient use of space and finished
+            to a professional standard throughout.</p>
+        </div>
+        <span class="tag">Offices &amp; flats</span>
+      </article>
+      <article class="svc">
+        <svg class="chev" viewBox="0 0 15 20" aria-hidden="true"><path d="M0 0 L15 10 L0 20 Z"/></svg>
+        <div>
+          <h3>Turnkey project solutions</h3>
+          <p>Grey structure through to final finishing under one contract — we handle planning,
+            procurement, trades and supervision, and hand you the keys.</p>
+        </div>
+        <span class="tag">Start to handover</span>
+      </article>
+      <article class="svc">
+        <svg class="chev" viewBox="0 0 15 20" aria-hidden="true"><path d="M0 0 L15 10 L0 20 Z"/></svg>
+        <div>
+          <h3>Architectural design &amp; planning</h3>
+          <p>Functional, efficient layouts worked out before anything is poured, with attention to
+            detail that keeps costs predictable later.</p>
+        </div>
+        <span class="tag">Design stage</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Portfolio</span>
+      <h2>Featured projects</h2>
+      <p class="lede">Completed work across housing estates and commercial flats — built, finished and
+        handed over.</p>
+    </div>
+    <div class="proj">
+      <figure class="p-a"><img src="assets/proj-office.webp" alt="Finished office interior with built-in joinery and glazed partitions"><figcaption>Commercial fit-out — workspace floor</figcaption></figure>
+      <figure class="p-b"><img src="assets/proj-lobby.webp" alt="CEO's office with chandelier and polished stone floor"><figcaption>CEO's office</figcaption></figure>
+      <figure class="p-c"><img src="assets/proj-lounge.webp" alt="Reception waiting area with curved seating"><figcaption>Reception waiting area</figcaption></figure>
+      <figure class="p-d"><img src="assets/proj-hall.webp" alt="Corridor with timber shelving"><figcaption>Corridor</figcaption></figure>
+    </div>
+    <div class="pcards">
+      <div class="pcard">
+        <h3>Residential housing estates</h3>
+        <p>Housing estate projects that combine modern design, strong construction and comfortable
+          living spaces. Planned with attention to detail, so quality and durability hold up long after
+          handover.</p>
+      </div>
+      <div class="pcard">
+        <h3>Commercial flats — Melburry Heights</h3>
+        <p>A commercial flats development offering modern design, efficient use of space and
+          high-quality construction. Built to serve both business and residential needs. Expected in two
+          years; completed and handed over in one.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="dcover">
+    <img src="assets/dha/d19.webp" alt="DHA M Sector residence exterior illuminated at dusk">
+    <div class="dcover-inner wrap">
+      <span class="dcover-eyebrow">Completed &amp; handed over</span>
+      <h2>DHA M Sector</h2>
+      <p class="lede">A private residence built end to end — grey structure through to final
+        finishing, fittings and landscaping.</p>
+    </div>
+  </div>
+  <div class="wrap" style="padding-top:clamp(40px,6vw,64px)">
+    <div class="ggrid">
+      <button class="gitem" data-full="assets/dha/d19.webp"><img src="assets/dha/d19.webp" alt="DHA M Sector residence exterior illuminated at dusk" loading="lazy"><span class="gcap">Facade at dusk</span></button>
+      <button class="gitem" data-full="assets/dha/d05.webp"><img src="assets/dha/d05.webp" alt="Entrance door with marble cladding and uplighting" loading="lazy"><span class="gcap">Entrance door</span></button>
+      <button class="gitem" data-full="assets/dha/d04.webp"><img src="assets/dha/d04.webp" alt="Black marble staircase with glass balustrade" loading="lazy"><span class="gcap">Staircase, black marble</span></button>
+      <button class="gitem" data-full="assets/dha/d03.webp"><img src="assets/dha/d03.webp" alt="Double-height stairwell with hanging leaf chandelier" loading="lazy"><span class="gcap">Stairwell &amp; chandelier</span></button>
+      <button class="gitem" data-full="assets/dha/d08.webp"><img src="assets/dha/d08.webp" alt="Staircase landing with arched mirrors" loading="lazy"><span class="gcap">Staircase landing</span></button>
+      <button class="gitem" data-full="assets/dha/d02.webp"><img src="assets/dha/d02.webp" alt="Open mezzanine hallway with timber feature wall" loading="lazy"><span class="gcap">Mezzanine hallway</span></button>
+      <button class="gitem" data-full="assets/dha/d14.webp"><img src="assets/dha/d14.webp" alt="Open-plan kitchen viewed from the mezzanine" loading="lazy"><span class="gcap">Kitchen</span></button>
+      <button class="gitem" data-full="assets/dha/d15.webp"><img src="assets/dha/d15.webp" alt="Kitchen and mezzanine at night with pendant lighting" loading="lazy"><span class="gcap">Kitchen, evening</span></button>
+      <button class="gitem" data-full="assets/dha/d16.webp"><img src="assets/dha/d16.webp" alt="Wide view of the mezzanine kitchen and living area" loading="lazy"><span class="gcap">Mezzanine, wide view</span></button>
+      <button class="gitem" data-full="assets/dha/d01.webp"><img src="assets/dha/d01.webp" alt="Living room with black curtains and statement ceiling fan" loading="lazy"><span class="gcap">Living room</span></button>
+      <button class="gitem" data-full="assets/dha/d12.webp"><img src="assets/dha/d12.webp" alt="Living room with monogram feature wall" loading="lazy"><span class="gcap">Living room, feature wall</span></button>
+      <button class="gitem" data-full="assets/dha/d11.webp"><img src="assets/dha/d11.webp" alt="Bedroom with brown drapes and marble flooring" loading="lazy"><span class="gcap">Bedroom</span></button>
+      <button class="gitem" data-full="assets/dha/d13.webp"><img src="assets/dha/d13.webp" alt="Bedroom with gold curtains and textured feature wall" loading="lazy"><span class="gcap">Bedroom, feature wall</span></button>
+      <button class="gitem" data-full="assets/dha/d18.webp"><img src="assets/dha/d18.webp" alt="Bedroom with curved ceiling fan and floor-to-ceiling curtains" loading="lazy"><span class="gcap">Bedroom, corner view</span></button>
+      <button class="gitem" data-full="assets/dha/d17.webp"><img src="assets/dha/d17.webp" alt="Bathroom with terrazzo tile and walk-in shower" loading="lazy"><span class="gcap">Bathroom, terrazzo</span></button>
+      <button class="gitem" data-full="assets/dha/d09.webp"><img src="assets/dha/d09.webp" alt="Bathroom with freestanding tub and stone basin" loading="lazy"><span class="gcap">Bathroom, freestanding tub</span></button>
+      <button class="gitem" data-full="assets/dha/d10.webp"><img src="assets/dha/d10.webp" alt="Bathroom with patterned tile and backlit mirror" loading="lazy"><span class="gcap">Bathroom, backlit mirror</span></button>
+      <button class="gitem" data-full="assets/dha/d06.webp"><img src="assets/dha/d06.webp" alt="Rooftop terrace with pergola and hanging planters" loading="lazy"><span class="gcap">Rooftop terrace</span></button>
+      <button class="gitem" data-full="assets/dha/d07.webp"><img src="assets/dha/d07.webp" alt="Rooftop terrace at dusk with string lighting" loading="lazy"><span class="gcap">Rooftop, evening</span></button>
+    </div>
+  </div>
+
+  <div class="dcover">
+    <img src="assets/buch/b17.webp" alt="10 Marla house, Buch Villas, facade illuminated at dusk">
+    <div class="dcover-inner wrap">
+      <span class="dcover-eyebrow">Completed &amp; handed over</span>
+      <h2>10 Marla House, Buch Villas</h2>
+      <p class="lede">A 10 marla residence completed from grey structure through to final finishing,
+        fittings and landscaping.</p>
+    </div>
+  </div>
+  <div class="wrap" style="padding-top:clamp(40px,6vw,64px)">
+    <div class="ggrid">
+      <button class="gitem" data-full="assets/buch/b17.webp"><img src="assets/buch/b17.webp" alt="10 Marla house, Buch Villas, facade illuminated at dusk" loading="lazy"><span class="gcap">Facade at dusk</span></button>
+      <button class="gitem" data-full="assets/buch/b16.webp"><img src="assets/buch/b16.webp" alt="House facade with driveway, daylight" loading="lazy"><span class="gcap">Facade &amp; driveway</span></button>
+      <button class="gitem" data-full="assets/buch/b15.webp"><img src="assets/buch/b15.webp" alt="House facade with upper balcony, dusk" loading="lazy"><span class="gcap">Facade &amp; balcony</span></button>
+      <button class="gitem" data-full="assets/buch/b14.webp"><img src="assets/buch/b14.webp" alt="Entrance door detail with linear accent lighting" loading="lazy"><span class="gcap">Entrance door</span></button>
+      <button class="gitem" data-full="assets/buch/b02.webp"><img src="assets/buch/b02.webp" alt="Staircase with timber treads and black balustrade" loading="lazy"><span class="gcap">Staircase</span></button>
+      <button class="gitem" data-full="assets/buch/b13.webp"><img src="assets/buch/b13.webp" alt="Upper stairwell landing with glass balustrade" loading="lazy"><span class="gcap">Stairwell, upper landing</span></button>
+      <button class="gitem" data-full="assets/buch/b05.webp"><img src="assets/buch/b05.webp" alt="Entry hallway with timber wardrobe and round mirror" loading="lazy"><span class="gcap">Entry hallway</span></button>
+      <button class="gitem" data-full="assets/buch/b01.webp"><img src="assets/buch/b01.webp" alt="Living room with feature wall and garden view" loading="lazy"><span class="gcap">Living room</span></button>
+      <button class="gitem" data-full="assets/buch/b09.webp"><img src="assets/buch/b09.webp" alt="Open-plan living and dining area with statement chandelier" loading="lazy"><span class="gcap">Open living &amp; dining</span></button>
+      <button class="gitem" data-full="assets/buch/b08.webp"><img src="assets/buch/b08.webp" alt="Kitchen with dark gloss cabinetry and pendant light" loading="lazy"><span class="gcap">Kitchen</span></button>
+      <button class="gitem" data-full="assets/buch/b10.webp"><img src="assets/buch/b10.webp" alt="Corridor with arched gallery wall and artwork" loading="lazy"><span class="gcap">Corridor, gallery wall</span></button>
+      <button class="gitem" data-full="assets/buch/b11.webp"><img src="assets/buch/b11.webp" alt="Corridor entry view toward the gallery wall" loading="lazy"><span class="gcap">Corridor, entry view</span></button>
+      <button class="gitem" data-full="assets/buch/b12.webp"><img src="assets/buch/b12.webp" alt="Bedroom with wood flooring and garden-facing window" loading="lazy"><span class="gcap">Bedroom, garden view</span></button>
+      <button class="gitem" data-full="assets/buch/b07.webp"><img src="assets/buch/b07.webp" alt="Bedroom with panelled feature wall" loading="lazy"><span class="gcap">Bedroom</span></button>
+      <button class="gitem" data-full="assets/buch/b03.webp"><img src="assets/buch/b03.webp" alt="Bathroom with dark marble feature wall" loading="lazy"><span class="gcap">Bathroom</span></button>
+      <button class="gitem" data-full="assets/buch/b04.webp"><img src="assets/buch/b04.webp" alt="Bathroom vanity with backlit mirror and marble counter" loading="lazy"><span class="gcap">Bathroom, vanity</span></button>
+      <button class="gitem" data-full="assets/buch/b06.webp"><img src="assets/buch/b06.webp" alt="Bathroom with black marble sink and walk-in shower" loading="lazy"><span class="gcap">Bathroom, black marble</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- WALKTHROUGH VIDEO -->
+<section id="walkthrough">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Walkthrough</span>
+      <h2>See a finished home</h2>
+      <p class="lede">A walkthrough of one of our completed residential builds — from the entrance gate
+        through to the interior finishing.</p>
+    </div>
+    <div class="vwrap">
+      <video id="wtVideo" muted loop playsinline preload="metadata" poster="assets/hero.webp">
+        <source src="assets/video/walkthrough.mp4" type="video/mp4">
+      </video>
+      <div class="vcontrols">
+        <button id="wtPlay" class="vbtn" aria-label="Play video">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+        </button>
+        <button id="wtMute" class="vbtn" aria-label="Unmute video">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9v6h4l5 5V4L8 9H4z" fill="currentColor"/><line x1="16" y1="9" x2="21" y2="14" stroke="currentColor" stroke-width="1.6"/><line x1="21" y1="9" x2="16" y2="14" stroke="currentColor" stroke-width="1.6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="tex" aria-hidden="true"><img src="assets/texture.webp" alt=""></div>
+  <div class="wrap" style="position:relative">
+    <div class="sec-head">
+      <span class="eyebrow">Our office</span>
+      <h2>Inside our head office</h2>
+      <p class="lede">A look at where we work — from the reception floor to the boardroom table. Real
+        photographs of our Multan office, unedited.</p>
+    </div>
+    <div class="gfilter" role="tablist" aria-label="Filter gallery by room">
+      <button class="gchip is-active" data-cat="all" role="tab" aria-selected="true">All</button>
+      <button class="gchip" data-cat="facade" role="tab" aria-selected="false">Head office</button>
+      <button class="gchip" data-cat="lounge" role="tab" aria-selected="false">Reception &amp; lounges</button>
+      <button class="gchip" data-cat="exec" role="tab" aria-selected="false">Executive offices</button>
+      <button class="gchip" data-cat="desks" role="tab" aria-selected="false">Workstations</button>
+      <button class="gchip" data-cat="board" role="tab" aria-selected="false">Boardroom</button>
+      <button class="gchip" data-cat="brand" role="tab" aria-selected="false">Interior branding</button>
+    </div>
+    <div class="ggrid" id="ggrid">
+      <button class="gitem" data-cat="facade" data-full="assets/gallery/g01.webp"><img src="assets/gallery/g01.webp" alt="Muhammad Builders &amp; Solution Inc. head office facade with illuminated signage" loading="lazy"><span class="gcap">Head office facade</span></button>
+      <button class="gitem" data-cat="lounge" data-full="assets/gallery/g02.webp"><img src="assets/gallery/g02.webp" alt="Reception lounge with backlit logo on marble feature wall" loading="lazy"><span class="gcap">Reception lounge</span></button>
+      <button class="gitem" data-cat="lounge" data-full="assets/gallery/g03.webp"><img src="assets/gallery/g03.webp" alt="Reception lounge seating with timber slat partition" loading="lazy"><span class="gcap">Reception &amp; waiting area</span></button>
+      <button class="gitem" data-cat="exec" data-full="assets/gallery/g04.webp"><img src="assets/gallery/g04.webp" alt="Meeting room with crystal chandelier and branded feature wall" loading="lazy"><span class="gcap">Meeting room</span></button>
+      <button class="gitem" data-cat="lounge" data-full="assets/gallery/g05.webp"><img src="assets/gallery/g05.webp" alt="Lounge seating area with wall-mounted television" loading="lazy"><span class="gcap">Staff lounge</span></button>
+      <button class="gitem" data-cat="desks" data-full="assets/gallery/g06.webp"><img src="assets/gallery/g06.webp" alt="Two workstations with bookshelves and task lighting" loading="lazy"><span class="gcap">Open workstations</span></button>
+      <button class="gitem" data-cat="exec" data-full="assets/gallery/g07.webp"><img src="assets/gallery/g07.webp" alt="Director's office with wooden desk and illuminated logo" loading="lazy"><span class="gcap">Director's office</span></button>
+      <button class="gitem" data-cat="brand" data-full="assets/gallery/g08.webp"><img src="assets/gallery/g08.webp" alt="Staircase landing with backlit company logo" loading="lazy"><span class="gcap">Staircase signage</span></button>
+      <button class="gitem" data-cat="brand" data-full="assets/gallery/g09.webp"><img src="assets/gallery/g09.webp" alt="Close view of the illuminated Muhammad Builders logo on the stairwell" loading="lazy"><span class="gcap">Logo detail</span></button>
+      <button class="gitem" data-cat="lounge" data-full="assets/gallery/g10.webp"><img src="assets/gallery/g10.webp" alt="Lounge seating with roller blinds and side table" loading="lazy"><span class="gcap">Lounge seating</span></button>
+      <button class="gitem" data-cat="lounge" data-full="assets/gallery/g11.webp"><img src="assets/gallery/g11.webp" alt="Wide view of lounge with ceiling fan and soft furnishings" loading="lazy"><span class="gcap">Lounge, wide view</span></button>
+      <button class="gitem" data-cat="exec" data-full="assets/gallery/g12.webp"><img src="assets/gallery/g12.webp" alt="Director's office desk viewed from seating area" loading="lazy"><span class="gcap">Executive desk</span></button>
+      <button class="gitem" data-cat="lounge" data-full="assets/gallery/g13.webp"><img src="assets/gallery/g13.webp" alt="Long lounge with curved sofas and branded wall" loading="lazy"><span class="gcap">Main lounge</span></button>
+      <button class="gitem" data-cat="desks" data-full="assets/gallery/g14.webp"><img src="assets/gallery/g14.webp" alt="Workstations separated by timber lattice partitions" loading="lazy"><span class="gcap">Workstation partitions</span></button>
+      <button class="gitem" data-cat="lounge" data-full="assets/gallery/g15.webp"><img src="assets/gallery/g15.webp" alt="Hallway seating beneath the company logo" loading="lazy"><span class="gcap">Corridor seating</span></button>
+      <button class="gitem" data-cat="exec" data-full="assets/gallery/g16.webp"><img src="assets/gallery/g16.webp" alt="Compact office desk with bookshelf" loading="lazy"><span class="gcap">Private office</span></button>
+      <button class="gitem" data-cat="board" data-full="assets/gallery/g17.webp"><img src="assets/gallery/g17.webp" alt="Long boardroom table with black mesh chairs" loading="lazy"><span class="gcap">Boardroom table</span></button>
+      <button class="gitem" data-cat="board" data-full="assets/gallery/g18.webp"><img src="assets/gallery/g18.webp" alt="Boardroom seating for twelve with pendant lighting" loading="lazy"><span class="gcap">Boardroom seating</span></button>
+      <button class="gitem" data-cat="board" data-full="assets/gallery/g19.webp"><img src="assets/gallery/g19.webp" alt="Boardroom view toward the acoustic feature wall" loading="lazy"><span class="gcap">Boardroom, feature wall</span></button>
+      <button class="gitem" data-cat="board" data-full="assets/gallery/g20.webp"><img src="assets/gallery/g20.webp" alt="Boardroom table set for a meeting" loading="lazy"><span class="gcap">Boardroom, full length</span></button>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous photo">&#8249;</button>
+  <img class="lb-img" id="lbImg" alt="">
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next photo">&#8250;</button>
+  <p class="lb-cap" id="lbCap"></p>
+</div>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Why us</span>
+      <h2>Why clients keep coming back</h2>
+    </div>
+    <div class="cols">
+      <div class="col">
+        <div class="rule"></div>
+        <h3>Your investment comes back with a margin</h3>
+        <p>We work with silent investors, putting their funds into construction projects matched to their
+          budget. On completion we sell at a strong market margin and return the capital together with
+          the profit — with the numbers open to inspection throughout.</p>
+      </div>
+      <div class="col">
+        <div class="rule"></div>
+        <h3>We finish when we said we would</h3>
+        <p>On one of our key flats projects the expected timeline was two years. We completed and handed
+          over inside twelve months. Timely completion is a commitment we plan for, not a hope.</p>
+      </div>
+      <div class="col">
+        <div class="rule"></div>
+        <h3>Competitive pricing, no hidden cost</h3>
+        <p>Market-friendly pricing without cutting quality. Careful planning and efficient resource
+          management bring overall expenses down, so every rupee invested earns its place in the build.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Process</span>
+      <h2>How a project runs</h2>
+      <p class="lede">We start by understanding your requirements and planning to your budget and vision,
+        then keep quality, safety and communication steady through every stage.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="n">Stage 1</span><h3>Planning and design</h3>
+        <p>Requirements, budget and vision turned into a buildable design and a realistic schedule.</p></div>
+      <div class="step"><span class="n">Stage 2</span><h3>Site preparation</h3>
+        <p>Site cleared, set out and serviced, with materials and labour scheduled to the programme.</p></div>
+      <div class="step"><span class="n">Stage 3</span><h3>Construction and supervision</h3>
+        <p>Build carried out under our own supervision, with quality and safety checked as work proceeds.</p></div>
+      <div class="step"><span class="n">Stage 4</span><h3>Final inspection and delivery</h3>
+        <p>Snagging closed out, a full inspection completed, and the project handed over to you.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES + MISSION -->
+<section id="values">
+  <div class="wrap split" style="align-items:start">
+    <div>
+      <span class="eyebrow">Our values</span>
+      <h2>What we hold ourselves to</h2>
+      <p class="muted" style="margin-top:20px">Our core values are built on integrity, quality and
+        professionalism — doing every project with honesty, transparency and a commitment to durable
+        construction and modern design.</p>
+      <p class="muted">We also value teamwork, customer satisfaction and continuous improvement. By
+        understanding what clients need and keeping communication clear, we deliver reliable results and
+        build a reputation worth having.</p>
+    </div>
+    <div class="vals">
+      <div class="val">
+        <svg class="chev" viewBox="0 0 15 20" aria-hidden="true"><path d="M0 0 L15 10 L0 20 Z"/></svg>
+        <div><h3>Cost-effective solutions</h3>
+          <p>Efficient planning, smart resource management and reliable execution — delivered inside budget.</p></div>
+      </div>
+      <div class="val">
+        <svg class="chev" viewBox="0 0 15 20" aria-hidden="true"><path d="M0 0 L15 10 L0 20 Z"/></svg>
+        <div><h3>Client satisfaction</h3>
+          <p>High-quality work, a real understanding of what you need, and professional service on time.</p></div>
+      </div>
+      <div class="val">
+        <svg class="chev" viewBox="0 0 15 20" aria-hidden="true"><path d="M0 0 L15 10 L0 20 Z"/></svg>
+        <div><h3>High safety standards</h3>
+          <p>Strict protocols and a secure site that protects our team and our clients on every project.</p></div>
+      </div>
+      <div class="val">
+        <svg class="chev" viewBox="0 0 15 20" aria-hidden="true"><path d="M0 0 L15 10 L0 20 Z"/></svg>
+        <div><h3>Trust and reliability</h3>
+          <p>Honesty and consistency in every project, so clients know where they stand at any point.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOOKING AHEAD -->
+<section id="ahead" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Looking ahead</span>
+      <h2>Where we're heading</h2></div>
+    <div class="cols">
+      <div class="col">
+        <div class="rule"></div>
+        <h3>Expand our market presence</h3>
+        <p>Taking on more residential and commercial projects across new locations, growing our client
+          base through consistent quality and reliable performance.</p>
+      </div>
+      <div class="col">
+        <div class="rule"></div>
+        <h3>Adopt modern technologies</h3>
+        <p>Integrating modern construction techniques and advanced tools to improve efficiency, reduce
+          cost and lift project quality.</p>
+      </div>
+      <div class="col">
+        <div class="rule"></div>
+        <h3>Build more sustainably</h3>
+        <p>Bringing eco-friendly materials and energy-efficient methods into our projects, so what we
+          build costs less to run and leaves a lighter footprint.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow">Get in touch</span>
+      <h2>Start a project</h2>
+      <p class="lede" style="margin-top:18px">Tell us what you're planning — a house, a commercial floor,
+        or an investment you want built and sold. We'll come back with an approach and an honest cost.</p>
+      <dl style="margin:34px 0 0">
+        <div class="detail"><dt>Phone</dt><dd><a href="tel:+923035191320">0303 519 1320</a></dd></div>
+        <div class="detail"><dt>Email</dt><dd><a href="mailto:muhammadbuilderssolutioninc@gmail.com">muhammadbuilderssolutioninc@gmail.com</a></dd></div>
+        <div class="detail"><dt>Office</dt><dd>Opposite BOP, MPS Road, Multan</dd></div>
+      </dl>
+      <p style="margin-top:22px"><a class="btn btn-ghost" href="https://wa.me/923035191320">Message us on WhatsApp</a></p>
+    </div>
+    <div>
+      <form id="enquiry">
+        <div class="row">
+          <div><label for="name">Your name</label><input id="name" name="name" required></div>
+          <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel"></div>
+        </div>
+        <div class="row">
+          <div><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+          <div><label for="type">Project type</label>
+            <select id="type" name="type">
+              <option>Residential construction</option>
+              <option>Commercial building</option>
+              <option>Turnkey project</option>
+              <option>Architectural design &amp; planning</option>
+              <option>Investment opportunity</option>
+            </select>
+          </div>
+        </div>
+        <div><label for="msg">About the project</label><textarea id="msg" name="msg"
+          placeholder="Location, size, stage you're at, and when you'd like to start."></textarea></div>
+        <div>
+          <button class="btn btn-gold" type="submit">Send enquiry</button>
+          <p class="note" id="formNote" style="margin-top:12px">This opens your email app with the details
+            filled in, addressed to our office.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="closing">
+  <div class="wrap">
+    <blockquote>Together, we build not just structures, but stronger communities.</blockquote>
+    <p class="by">Muhammad Builders &amp; Solution Inc.</p>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap fgrid">
+    <div class="fcol">
+      <a class="lock" href="#top" style="margin-bottom:16px">
+        <img src="assets/logo.webp" alt="">
+        <span class="name"><b>MUHAMMAD</b><span class="sub">BUILDERS &amp; SOLUTION INC.</span></span>
+      </a>
+      <p>Residential and commercial construction, architectural design and turnkey project delivery —
+        built on quality, transparency and finishing on time.</p>
+      <div class="fsocial">
+        <a href="https://wa.me/923035191320" aria-label="WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.5A10 10 0 1012 2z" stroke="currentColor" stroke-width="1.4"/><path d="M8.5 8.6c.2-.5.5-.5.8-.5h.6c.2 0 .4 0 .6.4.2.5.7 1.6.7 1.8.1.1.1.3 0 .4-.6 1.1-1.2 1-.7 1.8.7 1.1 1.3 1.6 2.3 2.1.2.1.3.1.4-.1.2-.3.7-.9.9-1.2.2-.2.3-.2.6-.1.2.1 1.5.7 1.8.8.2.1.4.2.4.3 0 .2 0 .9-.4 1.4-.3.5-1.3 1-2.2 1-1.9 0-3.9-1.1-5.3-2.5-1.4-1.4-2.4-3.3-2.4-4.9 0-.7.2-1.4.7-1.7z" fill="currentColor"/></svg>
+        </a>
+        <a href="mailto:muhammadbuilderssolutioninc@gmail.com" aria-label="Email">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.4"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="fcol">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#why">Why us</a></li>
+        <li><a href="#process">Process</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Residential construction</a></li>
+        <li><a href="#services">Commercial buildings</a></li>
+        <li><a href="#services">Turnkey solutions</a></li>
+        <li><a href="#services">Architectural design</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+923035191320">0303 519 1320</a></li>
+        <li><a href="mailto:muhammadbuilderssolutioninc@gmail.com">muhammadbuilderssolutioninc@gmail.com</a></li>
+        <li><span style="color:var(--muted)">Opposite BOP, MPS Road, Multan</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap fbar">
+    <span>&copy; <span id="yr">2026</span> Muhammad Builders &amp; Solution Inc. All rights reserved.</span>
+    <span>Multan, Pakistan</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+  btn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded',open?'true':'false');
+    btn.textContent=open?'Close':'Menu';
+  });
+  nav.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.textContent='Menu';}
+  });
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  // Header depth on scroll
+  var headerEl=document.querySelector('header');
+  function onScroll(){headerEl.classList.toggle('is-scrolled',window.scrollY>8);}
+  onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+
+  // Scroll reveal
+  var revealTargets=document.querySelectorAll(
+    '.sec-head, .pcard, .cols .col, .steps .step, .vals .val, .framed, .vwrap, .dcover, .svc, .stat'
+  );
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    revealTargets.forEach(function(el){el.classList.add('is-visible');});
+  } else if('IntersectionObserver' in window){
+    revealTargets.forEach(function(el){el.classList.add('reveal');});
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){en.target.classList.add('is-visible');io.unobserve(en.target);}
+      });
+    },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    revealTargets.forEach(function(el){io.observe(el);});
+  }
+
+  // Respect reduced-motion: freeze hero video on its poster frame
+  var heroVideo=document.querySelector('.hero-bg video');
+  if(heroVideo && window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    heroVideo.removeAttribute('autoplay');heroVideo.pause();
+  }
+
+  document.getElementById('enquiry').addEventListener('submit',function(e){
+    e.preventDefault();
+    var f=e.target;
+    var body='Name: '+f.name.value+'\nPhone: '+f.phone.value+'\nEmail: '+f.email.value+
+             '\nProject type: '+f.type.value+'\n\n'+f.msg.value;
+    window.location.href='mailto:muhammadbuilderssolutioninc@gmail.com?subject='+
+      encodeURIComponent('Project enquiry — '+f.type.value)+'&body='+encodeURIComponent(body);
+    document.getElementById('formNote').textContent='Your email app should now be open with the enquiry ready to send.';
+  });
+
+  // Gallery filter (scoped to the office gallery grid only)
+  var chips=document.querySelectorAll('.gchip'),filterItems=document.querySelectorAll('#ggrid .gitem');
+  chips.forEach(function(chip){
+    chip.addEventListener('click',function(){
+      chips.forEach(function(c){c.classList.remove('is-active');c.setAttribute('aria-selected','false');});
+      chip.classList.add('is-active');chip.setAttribute('aria-selected','true');
+      var cat=chip.dataset.cat;
+      filterItems.forEach(function(it){
+        it.hidden = !(cat==='all' || it.dataset.cat===cat);
+      });
+    });
+  });
+
+  // Lightbox (works across any .ggrid — navigation stays scoped to the grid clicked)
+  var lb=document.getElementById('lightbox'),lbImg=document.getElementById('lbImg'),
+      lbCap=document.getElementById('lbCap'),lbClose=document.getElementById('lbClose'),
+      lbPrev=document.getElementById('lbPrev'),lbNext=document.getElementById('lbNext');
+  var visible=[],idx=0,lastFocus=null;
+
+  function show(){
+    var it=visible[idx];
+    lbImg.src=it.dataset.full;
+    lbImg.alt=it.querySelector('img').alt;
+    lbCap.textContent=it.querySelector('.gcap').textContent;
+  }
+  document.addEventListener('click',function(e){
+    var it=e.target.closest('.gitem');
+    if(!it)return;
+    var grid=it.closest('.ggrid');
+    visible=Array.prototype.filter.call(grid.querySelectorAll('.gitem'),function(x){return !x.hidden;});
+    idx=visible.indexOf(it);
+    lastFocus=document.activeElement;
+    lb.hidden=false;document.body.style.overflow='hidden';
+    show();lbClose.focus();
+  });
+  function closeLb(){lb.hidden=true;document.body.style.overflow='';if(lastFocus)lastFocus.focus();}
+  lbClose.addEventListener('click',closeLb);
+  lb.addEventListener('click',function(e){if(e.target===lb)closeLb();});
+  lbPrev.addEventListener('click',function(){idx=(idx-1+visible.length)%visible.length;show();});
+  lbNext.addEventListener('click',function(){idx=(idx+1)%visible.length;show();});
+  document.addEventListener('keydown',function(e){
+    if(lb.hidden)return;
+    if(e.key==='Escape')closeLb();
+    if(e.key==='ArrowLeft'){idx=(idx-1+visible.length)%visible.length;show();}
+    if(e.key==='ArrowRight'){idx=(idx+1)%visible.length;show();}
+  });
+
+  // Walkthrough video controls
+  var wt=document.getElementById('wtVideo'),wtPlay=document.getElementById('wtPlay'),wtMute=document.getElementById('wtMute');
+  var playIcon='<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>';
+  var pauseIcon='<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z" fill="currentColor"/></svg>';
+  var muteIcon='<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9v6h4l5 5V4L8 9H4z" fill="currentColor"/><line x1="16" y1="9" x2="21" y2="14" stroke="currentColor" stroke-width="1.6"/><line x1="21" y1="9" x2="16" y2="14" stroke="currentColor" stroke-width="1.6"/></svg>';
+  var soundIcon='<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9v6h4l5 5V4L8 9H4z" fill="currentColor"/><path d="M16 9a4 4 0 010 6" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>';
+  if(wt){
+    wtPlay.addEventListener('click',function(){
+      if(wt.paused){wt.play();wtPlay.innerHTML=pauseIcon;wtPlay.setAttribute('aria-label','Pause video');}
+      else{wt.pause();wtPlay.innerHTML=playIcon;wtPlay.setAttribute('aria-label','Play video');}
+    });
+    wtMute.addEventListener('click',function(){
+      wt.muted=!wt.muted;
+      wtMute.innerHTML=wt.muted?muteIcon:soundIcon;
+      wtMute.setAttribute('aria-label',wt.muted?'Unmute video':'Mute video');
+    });
+    wt.addEventListener('ended',function(){wtPlay.innerHTML=playIcon;wtPlay.setAttribute('aria-label','Play video');});
+    var wtObserver=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(!en.isIntersecting && !wt.paused){wt.pause();wtPlay.innerHTML=playIcon;wtPlay.setAttribute('aria-label','Play video');}
+      });
+    },{threshold:.2});
+    wtObserver.observe(wt);
+  }
+})();
+</script>
+</body>
+</html>
